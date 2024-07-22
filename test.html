@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Text<span> Editor</span></h1>
+        <div class="editor-controls">
+            <textarea id="text-editor" placeholder="Type anything here..."></textarea>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="font-family">Font Family:</label>
+                    <select id="font-family" class="control"><option value="Arial">Arial</option></select>
+                </div>
+                <div class="control-group">
+                    <label for="font-weight">Font Weight:</label>
+                    <select id="font-weight" class="control"></select>
+                </div>
+                <div class="control-group">
+                    <label for="italic-style">Italic:</label>
+                    <select id="italic-style" class="control">
+                        <option value="normal">Normal</option>
+                        <option value="italic">Italic</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <button id="save-btn" class="control">Save</button>
+                </div>
+                <div class="control-group">
+                    <button id="reset-btn" class="control">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div id="autosave-message"></div> 
+    </div>
+    
+    <script src="script.js"></script>    
+</body>
+</html> 
+
+
